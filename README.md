@@ -7,6 +7,9 @@ An MCP server that provides tools for fetching SonarCloud issues related to pull
 
 Emphasis on the **\_\_me\_\_** part, which is a special value in the sonarcloud API to reference the current user (token owner). You can stick this in your `.claude/tools` folder as `sonarcloud-issues.md` to have a shortcut which requests claude code to fetch and fix issues from SonarCloud.
 
+<a href="https://glama.ai/mcp/servers/@dozzman/sonarcloud-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@dozzman/sonarcloud-mcp/badge" alt="SonarCloud Server MCP server" />
+</a>
 
 ## Features
 
@@ -61,10 +64,9 @@ npm start
 
 ### Environment Variables
 
-- `SONARCLOUD_TOKEN`: Your SonarCloud API token (required)j
+- `SONARCLOUD_TOKEN`: Your SonarCloud API token (required)
 - `SONARCLOUD_ORGANISATION`: Your SonarCloud organization key (optional, can be passed as a parameter)
 - `SONARCLOUD_PROJECT_KEY`: Your SonarCloud project key (optional, can be passed as a parameter)
-
 
 ## Claude Desktop / Claude Code Integration
 
@@ -123,4 +125,3 @@ Add to your `claude_desktop_config.json` or `claude.json`:
 
 ### Available Tools
 - `fetch_sonarcloud_issues`: Fetches SonarCloud issues for a specific pull request.
-
